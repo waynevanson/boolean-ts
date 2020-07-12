@@ -44,3 +44,78 @@ const value4 = b.and(false, false); // type is false
 
 const value4 = b.xnor(true, false); // type is true
 ```
+
+## Theory
+
+Based off information from [this website on basic logic gates](http://www.ee.surrey.ac.uk/Projects/CAL/digital-logic/gatesfunc/index.html#logicgates), we'll document some useful concepts here.
+
+### Truth Tables
+
+A truth table is a table that visually demonstrate how the logic gate should work. We'll focus on binary functions.
+There is a truth table for each operation: `and`, `or`, `nand`, `nor`, `xor`, `xnor`.
+
+### And
+
+Outputs true when all inputs are true.
+
+| A   | B   | Result |
+| --- | --- | ------ |
+| 0   | 0   | 0      |
+| 0   | 1   | 0      |
+| 1   | 0   | 0      |
+| 1   | 1   | 1      |
+
+### Or
+
+Outputs true when any input is true.
+
+|  A  |  B  | Result |
+| :-: | :-: | :----- |
+|  0  |  0  | 0      |
+|  0  |  1  | 1      |
+|  1  |  0  | 1      |
+|  1  |  1  | 1      |
+
+#### Nand
+
+Opposite of `And`. Ouputs true when both outputs are not true.
+
+|  A  |  B  | Result |
+| :-: | :-: | :----- |
+|  0  |  0  | 1      |
+|  0  |  1  | 1      |
+|  1  |  0  | 1      |
+|  1  |  1  | 0      |
+
+#### Nor
+
+Opposite of `Or`. Outputs true when both inputs are false
+
+|  A  |  B  | Result |
+| :-: | :-: | :----- |
+|  0  |  0  | 1      |
+|  0  |  1  | 0      |
+|  1  |  0  | 0      |
+|  1  |  1  | 0      |
+
+#### Xor
+
+Ouputs true when inputs are mismatched true/false.
+
+|  A  |  B  | Result |
+| :-: | :-: | :----- |
+|  0  |  0  | 0      |
+|  0  |  1  | 1      |
+|  1  |  0  | 1      |
+|  1  |  1  | 0      |
+
+#### Xnor
+
+Ouputs true when both inputs are true or both inputs are false.
+
+|  A  |  B  | Result |
+| :-: | :-: | :----- |
+|  0  |  0  | 1      |
+|  0  |  1  | 0      |
+|  1  |  0  | 0      |
+|  1  |  1  | 1      |
