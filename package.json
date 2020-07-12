@@ -2,7 +2,7 @@
   "name": "boolean-ts",
   "version": "1.0.1",
   "description": "Compile time support for runtime logic operations in Typescript",
-  "main": "dist/index.ts",
+  "main": "dist/index.js",
   "repository": "https://github.com/waynevanson/boolean-ts",
   "author": "Wayne Van Son",
   "license": "MIT",
