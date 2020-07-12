@@ -1,6 +1,6 @@
 {
   "name": "boolean-ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Compile time support for runtime logic operations in Typescript",
   "main": "dist/index.js",
   "repository": "https://github.com/waynevanson/boolean-ts",
